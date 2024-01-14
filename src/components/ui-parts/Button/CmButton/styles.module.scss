@@ -1,0 +1,38 @@
+@use '@/assets/styles/variables' as var;
+
+.cmButton {
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  padding: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.isDisabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  &.outline {
+    color: var.$white;
+  }
+  &.outlineRed {
+    background-color: var.$red-50;
+    color: var.$white;
+  }
+  &:disabled {
+    background-color: var.$gray-20 !important;
+    color: var.$white !important;
+    border: none !important;
+  }
+
+  .leftIcon {
+    margin-right: 8px;
+  }
+  .rightIcon {
+    margin-left: 8px;
+  }
+}
