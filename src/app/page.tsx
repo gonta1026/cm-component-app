@@ -8,30 +8,48 @@ export function generateMetadata() {
   };
 }
 
+const LINKS = [
+  {
+    href: '/button',
+    name: 'Button',
+  },
+  {
+    href: '/input',
+    name: 'Input',
+  },
+  {
+    href: '/textarea',
+    name: 'Textarea',
+  },
+  {
+    href: '/select',
+    name: 'Select',
+  },
+  {
+    href: '/radio',
+    name: 'Radio',
+  },
+  {
+    href: '/checkbox',
+    name: 'Checkbox',
+  },
+  {
+    href: '/icon',
+    name: 'Icon',
+  },
+];
+
 export default function Home() {
   return (
     <div className={styles.home}>
       <CmContainer>
         <h2 className={styles.title}>Components / ui-parts</h2>
         <ul className={styles.items}>
-          <li>
-            <Link href={'/button'}>Button</Link>
-          </li>
-          <li>
-            <Link href={'/input'}>Input</Link>
-          </li>
-          <li>
-            <Link href={'/textarea'}>Textarea</Link>
-          </li>
-          <li>
-            <Link href={'/select'}>Select</Link>
-          </li>
-          <li>
-            <Link href={'/radio'}>Radio</Link>
-          </li>
-          <li>
-            <Link href={'/icon'}>Icon</Link>
-          </li>
+          {LINKS.map((link) => (
+            <li key={link.name}>
+              <Link href={link.href}>{link.name}</Link>
+            </li>
+          ))}
         </ul>
       </CmContainer>
     </div>
