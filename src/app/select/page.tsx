@@ -43,7 +43,7 @@ export default function Input() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
-                href={'https://github.com/gonta1026/cm-component-app/tree/main/src/app/input'}
+                href={'https://github.com/gonta1026/cm-component-app/tree/main/src/app/select'}
               >
                 sample page
               </a>

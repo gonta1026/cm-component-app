@@ -1,0 +1,64 @@
+@use '@/assets/styles/variables' as var;
+
+.cmRadio {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  .input {
+    border: 0px;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    display: none;
+  }
+  .radio {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: initial;
+    border-radius: 50px;
+    border-color: #d9d9d9;
+    color: #fff;
+  }
+
+  &.isChecked {
+    &:focus-within {
+      .radio {
+        outline: solid 1px #07b53b !important;
+      }
+    }
+    .radio {
+      background: #07b53b;
+      border-color: #07b53b;
+      color: #fff;
+      &:before {
+        content: '';
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        background: currentcolor;
+      }
+    }
+    .input {
+      display: block;
+    }
+  }
+  .label {
+    margin-left: 8px;
+    word-wrap: break-word;
+  }
+}
