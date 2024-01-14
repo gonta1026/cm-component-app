@@ -5,6 +5,7 @@ import { CmButton } from '@/components/ui-parts/Button/CmButton';
 import { COLOR } from '@/styles/const';
 import { AddIcon } from '@/components/ui-parts/Icon/AddIcon';
 import { ChevronRightIcon } from '@/components/ui-parts/Icon/ChevronRight';
+import { CmSpinner } from '@/components/ui-parts/Button/Spinner/CmSpinner';
 
 export function generateMetadata() {
   return {
@@ -26,8 +27,12 @@ export default function Button() {
           <CmButton buttonStyle="solid" rightIcon={<ChevronRightIcon color={COLOR.PRIMARY} />}>
             ボタン
           </CmButton>
+          <CmButton buttonStyle="outline" leftIcon={<CmSpinner />}>
+            Loading...
+          </CmButton>
           <CmButton color="red">Danger</CmButton>
         </div>
+        <CmSpinner />
       </CmContainer>
     </div>
   );

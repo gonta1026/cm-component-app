@@ -5,11 +5,12 @@
   font-size: 14px;
   font-weight: 700;
   text-align: center;
-  padding: 12px;
+  padding: 0 12px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 40px;
 
   &.isDisabled {
     opacity: 0.4;
