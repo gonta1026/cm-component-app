@@ -1,0 +1,15 @@
+.icon {
+  .title {
+    text-align: center;
+  }
+  .content {
+    padding: 30px 0;
+  }
+  .icons {
+    display: grid;
+    gap: 8px;
+    li {
+      margin: 10px;
+    }
+  }
+}

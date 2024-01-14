@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 import { CmButton } from '@/components/ui-parts/Button/CmButton';
 import { COLOR } from '@/styles/const';
 import { AddIcon } from '@/components/ui-parts/Icon/AddIcon';
-import { SearchIcon } from '@/components/ui-parts/Icon/SearchIcon';
+import { ChevronRightIcon } from '@/components/ui-parts/Icon/ChevronRight';
 
 export function generateMetadata() {
   return {
@@ -23,7 +23,7 @@ export default function Button() {
           <CmButton buttonStyle="solid" leftIcon={<AddIcon color={COLOR.PRIMARY} />}>
             button
           </CmButton>
-          <CmButton buttonStyle="solid" rightIcon={<SearchIcon color={COLOR.PRIMARY} />}>
+          <CmButton buttonStyle="solid" rightIcon={<ChevronRightIcon color={COLOR.PRIMARY} />}>
             ボタン
           </CmButton>
           <CmButton color="red">Danger</CmButton>
