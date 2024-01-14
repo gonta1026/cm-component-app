@@ -4,4 +4,3 @@
 
 yarn type-check
 yarn lint
-yarn build
