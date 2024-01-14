@@ -10,7 +10,7 @@ import { CmTextarea } from '@/components/ui-parts/Textarea/CmTextarea';
 
 export function generateMetadata() {
   return {
-    title: `input | cm-component-app`,
+    title: `textarea | cm-component-app`,
   };
 }
 
