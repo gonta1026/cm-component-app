@@ -2,9 +2,9 @@ import classNames from 'classnames';
 import Image from 'next/image';
 import React, { ChangeEvent, FC, ReactNode, useState } from 'react';
 import { MATERIAL_ICON } from '@/assets/images/materialIcon';
-import { CmInput } from '@/components/ui-parts/Form/Input/CmInput';
 import styles from './styles.module.scss';
-import { CmLabel } from '@/components/ui-parts/Form/Label/CmLabel';
+import { CmLabel } from '@/components/ui-parts/Label/CmLabel';
+import { CmInput } from '@/components/ui-parts/Input/CmInput';
 
 type Props = {
   id: string;

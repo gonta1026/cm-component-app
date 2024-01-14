@@ -1,6 +1,6 @@
+import { CmLabel } from '@/components/ui-parts/Label/CmLabel';
+import { CmSelect } from '@/components/ui-parts/Select/CmSelect';
 import React, { ChangeEvent, FC, ReactNode } from 'react';
-import { CmLabel } from '@/components/ui-parts/Form/Label/CmLabel';
-import { CmSelect } from '@/components/ui-parts/Form/Select/CmSelect';
 
 type Props = {
   isRequired?: boolean;

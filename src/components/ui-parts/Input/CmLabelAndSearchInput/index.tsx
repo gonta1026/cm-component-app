@@ -1,6 +1,6 @@
+import { CmSearchInput } from '@/components/ui-parts/Input/CmSearchInput';
+import { CmLabel } from '@/components/ui-parts/Label/CmLabel';
 import React, { ChangeEvent, FC, ReactNode } from 'react';
-import { CmSearchInput } from '@/components/ui-parts/Form/Input/CmSearchInput';
-import { CmLabel } from '@/components/ui-parts/Form/Label/CmLabel';
 
 type Props = {
   id: string;

@@ -1,7 +1,8 @@
 import classNames from 'classnames';
 import React, { ChangeEvent, FC, ReactNode } from 'react';
 import styles from './styles.module.scss';
-import { CmLabel } from '@/components/ui-parts/Form/Label/CmLabel';
+import { CmLabel } from '@/components/ui-parts/Label/CmLabel';
+
 type Props = {
   id: string;
   className: string;

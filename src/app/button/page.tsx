@@ -18,8 +18,13 @@ export default function Button() {
     <div className={styles.button}>
       <CmContainer>
         <h2 className={styles.title}>Button</h2>
-        <Link href={'/'}>to TopPage</Link>
         <div className={styles.content}>
+          <Link href={'/'}>← TopPage</Link>
+          <div>
+            <Link href={'https://github.com/gonta1026/cm-component-app/tree/main/src/app/button'}>
+              Check it on Github
+            </Link>
+          </div>
           <CmButton leftIcon={<AddIcon color={'#fff'} />}>button</CmButton>
           <CmButton buttonStyle="solid" leftIcon={<AddIcon color={COLOR.PRIMARY} />}>
             button

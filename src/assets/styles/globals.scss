@@ -28,8 +28,11 @@ p {
   letter-spacing: 0.12em;
 }
 
-button {
+a {
   @include var.mq(tablet) {
+    &:hover {
+      opacity: 0.5;
+    }
     cursor: pointer;
   }
 }

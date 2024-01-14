@@ -30,7 +30,7 @@ export const CmInput: FC<Props> = ({
   });
   return (
     <div className={styles.inputWrapper}>
-      {showIcon && <SearchIcon width={16} height={16} className={styles.searchIcon} />}
+      {showIcon && <SearchIcon color="#ddd" className={styles.searchIcon} />}
       <input {...{ id, value, type, placeholder, onChange }} className={inputClassNames} disabled={isDisabled} />
     </div>
   );
