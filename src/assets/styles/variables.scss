@@ -1,0 +1,67 @@
+/********
+* color
+********/
+
+/* 変数の命名は後で考える。 */
+
+$primary-50: #0288d1;
+// $primary-50: #000;
+$primary-60: #dd9124;
+$primary-5: #fef5e6;
+
+$gray: #242424;
+$gray-70: #6f706b;
+$gray-20: #d3d3d3;
+$gray-10: #e9e9e9;
+$gray-5: #f7f7f7;
+
+$gray-alpha-87: rgba(36, 36, 36, 0.87);
+$gray-alpha-80: rgba(52, 52, 52, 0.8);
+$gray-alpha-64: rgba(36, 36, 36, 0.64);
+
+$gray-20: #d3d3d3;
+$gray-10: #e9e9e9;
+$gray-5: #f7f7f7;
+
+$red-60: #a73b42;
+$red-50: #b94249;
+$red-5: #f8eced;
+
+$black: #000000; // これ使わなくてもいいかも
+$white: #ffffff; // これ使わなくてもいいかも
+
+/********
+* font-family
+********/
+
+/********
+* breakpoints
+********/
+$breakpoints: (
+  'sp': 'screen and (max-width: 750px)',
+  'tablet': 'screen and (min-width: 751px)',
+  'pc': 'screen and (min-width: 1024px)',
+) !default;
+
+/********
+* z-index
+********/
+$z-modal-overlay: 100000000;
+$z-header: 100;
+$z-sidebar: 99;
+// $z-header-menu: 101;
+// $z-overlay: 300;
+// $z-scroll-btn: 90;
+$max-screen-width: 1024px;
+
+/********
+* Global Design Specifications
+********/
+$header-height: 50px;
+
+/* 初期値はmd(iphone screen size) */
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

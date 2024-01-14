@@ -1,0 +1,18 @@
+@use '@/assets/styles/variables' as var;
+
+.label {
+  margin-bottom: 7px; // 本当は直接はよくないが面倒なのでつける。
+  display: flex;
+  width: fit-content;
+  // align-items: center;
+  .name {
+    color: var.$gray-alpha-87;
+    font-size: 12px;
+  }
+  .required {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;
+    margin-left: 2px;
+  }
+}

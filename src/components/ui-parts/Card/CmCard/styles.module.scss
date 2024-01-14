@@ -1,0 +1,10 @@
+@use '@/assets/styles/variables' as var;
+
+.cmCard {
+  background-color: #fff;
+  padding: 15px;
+  background-color: var.$white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}

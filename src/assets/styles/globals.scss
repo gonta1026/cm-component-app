@@ -1,0 +1,85 @@
+@use '@/assets/styles/variables' as var;
+
+html {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, Sans-Serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+div,
+p {
+  letter-spacing: 0.12em;
+}
+
+button {
+  @include var.mq(tablet) {
+    cursor: pointer;
+  }
+}
+
+input {
+  background-color: #fff;
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 999px #fff inset;
+}
+input,
+select {
+  // これがないとブラウザのデフォルトスタイルが当たってしまう。
+  appearance: none;
+  -webkit-appearance: none;
+  font-size: 16px;
+  outline: none;
+  color: inherit;
+}
+
+textarea {
+  font-family: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 0;
+  background: transparent;
+  border-color: transparent;
+  color: inherit;
+}
+
+.pc {
+  @include var.mq() {
+    display: none;
+  }
+  @include var.mq(tablet) {
+    display: block;
+  }
+}
+
+.sp {
+  @include var.mq() {
+    display: block;
+  }
+  @include var.mq(tablet) {
+    display: none;
+  }
+}

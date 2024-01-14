@@ -1,0 +1,11 @@
+@use '@/assets/styles/variables' as var;
+
+.cmMessageCard {
+  background-color: #fff;
+  padding: 15px;
+  background-color: var.$white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: fit-content;
+  margin-top: 40px;
+}

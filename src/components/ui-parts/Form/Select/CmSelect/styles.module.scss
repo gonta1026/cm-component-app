@@ -1,0 +1,37 @@
+@use '@/assets/styles/variables' as var;
+
+.cmSelectWrapper {
+  position: relative;
+  width: 100%;
+  .cmSelect {
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid var.$gray-10;
+    &::placeholder {
+      color: var.$gray-20;
+    }
+    &:focus {
+      border: 1px solid var.$gray-alpha-87;
+    }
+    &:disabled {
+      color: 1px solid var.$gray-alpha-64;
+    }
+    &.isError {
+      border: 1px solid var.$red-50;
+    }
+  }
+  .selectArrow {
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    right: 2px;
+    top: 9px;
+  }
+}

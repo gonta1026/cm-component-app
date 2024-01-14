@@ -1,0 +1,7 @@
+@use '@/assets/styles/variables' as var;
+
+.text {
+  font-size: 10px;
+  color: var.$gray-alpha-64;
+  margin-top: 5px; // 本当は直接はよくないが面倒なのでつける。
+}
