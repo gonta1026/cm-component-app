@@ -4,9 +4,8 @@
   margin-bottom: 7px; // 本当は直接はよくないが面倒なのでつける。
   display: flex;
   width: fit-content;
-  // align-items: center;
   .name {
-    color: var.$gray-alpha-87;
+    color: rgba(36, 36, 36, 0.87);
     font-size: 12px;
   }
   .required {

@@ -17,6 +17,9 @@ export default function Home() {
           <li>
             <Link href={'/button'}>Button</Link>
           </li>
+          <li>
+            <Link href={'/input'}>Input</Link>
+          </li>
         </ul>
       </CmContainer>
     </div>

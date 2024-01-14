@@ -5,6 +5,6 @@ type Props = {
   children: ReactNode;
 };
 
-export const CmErrorMessage: FC<Props> = ({ children }) => {
+export const CmErrorText: FC<Props> = ({ children }) => {
   return <p className={styles.text}>{children}</p>;
 };

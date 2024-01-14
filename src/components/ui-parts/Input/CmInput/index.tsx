@@ -3,23 +3,23 @@ import React, { ChangeEvent, FC, ReactNode } from 'react';
 import styles from './styles.module.scss';
 import { SearchIcon } from '@/components/ui-parts/Icon/SearchIcon';
 type Props = {
-  id: string;
+  id?: string;
   placeholder?: string;
   isDisabled?: boolean;
   isError?: ReactNode;
-  value: string | number;
-  type: 'text' | 'password' | 'number';
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  value?: string | number;
+  type?: 'text' | 'password' | 'number';
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
   showIcon?: boolean;
 };
 
 export const CmInput: FC<Props> = ({
-  id,
+  id = undefined,
   placeholder = '',
   isDisabled = false,
   showIcon = false,
   value,
-  type,
+  type = 'text',
   isError,
   onChange,
 }) => {

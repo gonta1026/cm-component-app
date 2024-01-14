@@ -18,15 +18,15 @@
   }
 
   &.outline {
-    color: var.$white;
+    color: #fff;
   }
   &.outlineRed {
-    background-color: var.$red-50;
-    color: var.$white;
+    background-color: #b94249;
+    color: #fff;
   }
   &:disabled {
-    background-color: var.$gray-20 !important;
-    color: var.$white !important;
+    background-color: #d3d3d3 !important;
+    color: #fff !important;
     border: none !important;
   }
 
