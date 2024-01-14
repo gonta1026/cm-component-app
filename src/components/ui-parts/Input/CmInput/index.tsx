@@ -14,7 +14,7 @@ type Props = {
 };
 
 export const CmInput: FC<Props> = ({
-  id = undefined,
+  id,
   placeholder = '',
   isDisabled = false,
   showIcon = false,

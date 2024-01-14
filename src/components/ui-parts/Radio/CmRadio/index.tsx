@@ -11,10 +11,11 @@ type Props = {
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 };
 
-export const CmRadio: FC<Props> = ({ id = undefined, isChecked = false, children, value, onChange }) => {
+export const CmRadio: FC<Props> = ({ id, isChecked = false, children, isDisabled, value, onChange }) => {
   const radioClassNames = classNames({
     [styles.cmRadio]: true,
     [styles.isChecked]: isChecked,
+    [styles.isDisabled]: isDisabled,
   });
   return (
     <label htmlFor={id} className={radioClassNames}>
@@ -23,6 +24,7 @@ export const CmRadio: FC<Props> = ({ id = undefined, isChecked = false, children
         type="radio"
         {...{ value, onChange }}
         checked={isChecked}
+        disabled={isDisabled}
         readOnly={onChange === undefined}
       />
       <span className={styles.radio} />
