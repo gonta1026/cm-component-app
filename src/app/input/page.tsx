@@ -19,6 +19,20 @@ export function generateMetadata() {
 }
 
 const { search } = MATERIAL_ICON;
+const COMPONENTS = [
+  {
+    href: 'https://github.com/gonta1026/cm-component-app/blob/main/src/components/ui-parts/Input/CmInput',
+    name: 'CmInput',
+  },
+  {
+    href: 'https://github.com/gonta1026/cm-component-app/tree/main/src/components/ui-parts/Input/CmIconInput',
+    name: 'CmIconInput',
+  },
+  {
+    href: 'https://github.com/gonta1026/cm-component-app/tree/main/src/components/ui-parts/Input/CmPasswordInput',
+    name: 'CmPasswordInput',
+  },
+] as const;
 
 export default function Input() {
   return (
@@ -41,18 +55,13 @@ export default function Input() {
                 sample page
               </a>
             </div>
-            <div className={styles.showLink}>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-                href={
-                  'https://github.com/gonta1026/cm-component-app/blob/main/src/components/ui-parts/Input/CmInput/index.tsx'
-                }
-              >
-                - CmInput
-              </a>
-            </div>
+            {COMPONENTS.map((component) => (
+              <div key={component.href} className={styles.showLink}>
+                <a target="_blank" rel="noopener noreferrer" className={styles.link} href={component.href}>
+                  - {component.name}
+                </a>
+              </div>
+            ))}
           </div>
           <CmCard className={styles.card}>
             <div>
