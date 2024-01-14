@@ -3,10 +3,10 @@ import React, { FC, MouseEventHandler, ReactNode } from 'react';
 import styles from './styles.module.scss';
 import { COLOR } from '@/styles/const';
 
-type ButtonStyle = 'solid' | 'outline';
+type Variant = 'solid' | 'outline';
 
 type Props = {
-  buttonStyle?: ButtonStyle;
+  variant?: Variant;
   isDisabled?: boolean;
   className?: string;
   leftIcon?: ReactNode;
@@ -18,7 +18,7 @@ type Props = {
 };
 
 export const CmButton: FC<Props> = ({
-  buttonStyle = 'outline',
+  variant = 'outline',
   isDisabled = false,
   className = '',
   color = COLOR.PRIMARY,
@@ -30,7 +30,7 @@ export const CmButton: FC<Props> = ({
 }) => {
   const buttonClassNames = classNames({
     [styles.cmButton]: true,
-    [styles[buttonStyle]]: true,
+    [styles[variant]]: true,
     [styles.isDisabled]: isDisabled,
     [className]: true,
   });
@@ -46,7 +46,7 @@ export const CmButton: FC<Props> = ({
       border: undefined,
       color: '#fff',
     },
-  }[buttonStyle];
+  }[variant];
 
   return (
     <button {...{ onClick, style, type }} className={buttonClassNames} disabled={isDisabled}>

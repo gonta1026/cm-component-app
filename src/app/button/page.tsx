@@ -22,30 +22,34 @@ export default function Button() {
           <Link href={'/'}>← TopPage</Link>
           <div>
             Check it on{' '}
-            <Link
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.link}
               href={'https://github.com/gonta1026/cm-component-app/tree/main/src/app/button'}
             >
               sample page
-            </Link>{' '}
+            </a>{' '}
             and{' '}
-            <Link
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.link}
               href={
                 'https://github.com/gonta1026/cm-component-app/blob/main/src/components/ui-parts/Button/CmButton/index.tsx'
               }
             >
               component
-            </Link>
+            </a>
           </div>
           <CmButton leftIcon={<AddIcon color={'#fff'} />}>button</CmButton>
-          <CmButton buttonStyle="solid" leftIcon={<AddIcon color={COLOR.PRIMARY} />}>
+          <CmButton variant="solid" leftIcon={<AddIcon color={COLOR.PRIMARY} />}>
             button
           </CmButton>
-          <CmButton buttonStyle="solid" rightIcon={<ChevronRightIcon color={COLOR.PRIMARY} />}>
+          <CmButton variant="solid" rightIcon={<ChevronRightIcon color={COLOR.PRIMARY} />}>
             ボタン
           </CmButton>
-          <CmButton buttonStyle="outline" leftIcon={<CmSpinner />}>
+          <CmButton variant="outline" leftIcon={<CmSpinner />}>
             Loading...
           </CmButton>
           <CmButton color="red">Danger</CmButton>
