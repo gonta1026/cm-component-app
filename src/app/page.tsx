@@ -27,6 +27,9 @@ export default function Home() {
             <Link href={'/select'}>Select</Link>
           </li>
           <li>
+            <Link href={'/radio'}>Radio</Link>
+          </li>
+          <li>
             <Link href={'/icon'}>Icon</Link>
           </li>
         </ul>
