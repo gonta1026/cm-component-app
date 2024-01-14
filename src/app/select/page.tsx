@@ -3,18 +3,15 @@ import Link from 'next/link';
 import styles from './styles.module.scss';
 import { CmSpinner } from '@/components/ui-parts/Button/Spinner/CmSpinner';
 import { CmCard } from '@/components/ui-parts/Card/CmCard';
-import { CmInput } from '@/components/ui-parts/Input/CmInput';
-import { CmPasswordInput } from '@/components/ui-parts/Input/CmPasswordInput';
 import { CmLabel } from '@/components/ui-parts/Label/CmLabel';
-import { CmIconInput } from '@/components/ui-parts/Input/CmIconInput';
 import { MATERIAL_ICON } from '@/assets/images/materialIcon';
-import Image from 'next/image';
 import { CmHelpterText } from '@/components/ui-parts/Text/CmHelpterText';
 import { CmErrorText } from '@/components/ui-parts/Text/CmErrorText';
+import { CmSelect } from '@/components/ui-parts/Select/CmSelect';
 
 export function generateMetadata() {
   return {
-    title: `input | cm-component-app`,
+    title: `select | cm-component-app`,
   };
 }
 
@@ -25,22 +22,14 @@ const COMPONENTS = [
     name: 'CmLabel',
   },
   {
-    href: 'https://github.com/gonta1026/cm-component-app/blob/main/src/components/ui-parts/Input/CmInput',
-    name: 'CmInput',
-  },
-  {
-    href: 'https://github.com/gonta1026/cm-component-app/tree/main/src/components/ui-parts/Input/CmIconInput',
-    name: 'CmIconInput',
-  },
-  {
-    href: 'https://github.com/gonta1026/cm-component-app/tree/main/src/components/ui-parts/Input/CmPasswordInput',
-    name: 'CmPasswordInput',
+    href: 'https://github.com/gonta1026/cm-component-app/tree/main/src/components/ui-parts/Select/CmSelect',
+    name: 'CmSelect',
   },
 ] as const;
 
 export default function Input() {
   return (
-    <div className={styles.input}>
+    <div className={styles.select}>
       <CmContainer>
         <h2 className={styles.title}>Input</h2>
         <div className={styles.content}>
@@ -70,41 +59,35 @@ export default function Input() {
           <CmCard className={styles.card}>
             <div>
               <CmLabel htmlFor="input">normal</CmLabel>
-              <CmInput id="input" />
+              <CmSelect id="input">
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </CmSelect>
               <CmHelpterText>hogehogehoge</CmHelpterText>
             </div>
             <div>
               <CmLabel htmlFor="required" isRequired>
                 normal
               </CmLabel>
-              <CmInput id="required" />
+              <CmSelect id="required">
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </CmSelect>
             </div>
             <div>
               <CmLabel htmlFor="error">error</CmLabel>
-              <CmInput id="error" isError />
+              <CmSelect id="error" isError>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </CmSelect>
               <CmErrorText>fugafugafuga</CmErrorText>
             </div>
             <div>
               <CmLabel htmlFor="disabled">disabled</CmLabel>
-              <CmInput id="disabled" isDisabled />
-            </div>
-            <div>
-              <CmLabel htmlFor="password">password</CmLabel>
-              <CmPasswordInput id="password" />
-            </div>
-            <div>
-              <CmLabel htmlFor="left-icon">left icon</CmLabel>
-              <CmIconInput
-                id="left-icon"
-                leftIcon={<Image src={search.src} alt={search.alt} width={18} height={18} />}
-              />
-            </div>
-            <div>
-              <CmLabel htmlFor="right-icon">right icon</CmLabel>
-              <CmIconInput
-                id="right-icon"
-                rightIcon={<Image src={search.src} alt={search.alt} width={18} height={18} />}
-              />
+              <CmSelect id="disabled" isDisabled>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </CmSelect>
             </div>
           </CmCard>
         </div>

@@ -5,15 +5,14 @@ import { MATERIAL_ICON } from '@/assets/images/materialIcon';
 import styles from './styles.module.scss';
 
 type Props = {
-  id: string;
+  id?: string;
   className?: string;
   placeholder?: string;
   isDisabled?: boolean;
-  helperText?: ReactNode;
-  errorMessage?: ReactNode;
+  isError?: boolean;
   children: ReactNode;
-  value: string | number;
-  onChange: (e: ChangeEvent<HTMLSelectElement>) => void;
+  value?: string | number;
+  onChange?: (e: ChangeEvent<HTMLSelectElement>) => void;
 };
 
 const { expandMore } = MATERIAL_ICON;
@@ -23,16 +22,15 @@ export const CmSelect: FC<Props> = ({
   className = '',
   placeholder = '',
   isDisabled = false,
-  helperText,
+  isError = false,
   value,
-  errorMessage,
   children,
   onChange,
 }) => {
   const wrapperClassNames = classNames(styles.cmSelectWrapper, className);
   const selectClassNames = classNames({
     [styles.cmSelect]: true,
-    [styles.isError]: errorMessage !== undefined,
+    [styles.isError]: isError,
   });
   return (
     <div className={wrapperClassNames}>
@@ -42,8 +40,6 @@ export const CmSelect: FC<Props> = ({
       <div className={styles.selectArrow}>
         <Image src={expandMore.src} width={12} height={7} alt={expandMore.alt} />
       </div>
-      {helperText}
-      {errorMessage}
     </div>
   );
 };

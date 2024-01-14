@@ -13,9 +13,13 @@ export default function Icon() {
   return (
     <div className={styles.icon}>
       <CmContainer>
-        <h2 className={styles.title}>Button</h2>
-        <Link href={'/'}>to TopPage</Link>
+        <h2 className={styles.title}>Icon</h2>
         <div className={styles.content}>
+          <div className={styles.topBlock}>
+            <Link href={'/'} className={styles.prevLink}>
+              ← TopPage
+            </Link>
+          </div>
           <ul className={styles.icons}>
             {Object.values(MATERIAL_ICON).map((icon) => (
               <li key={icon.src}>

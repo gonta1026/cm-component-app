@@ -20,6 +20,15 @@ export default function Home() {
           <li>
             <Link href={'/input'}>Input</Link>
           </li>
+          <li>
+            <Link href={'/textarea'}>Textarea</Link>
+          </li>
+          <li>
+            <Link href={'/select'}>Select</Link>
+          </li>
+          <li>
+            <Link href={'/icon'}>Icon</Link>
+          </li>
         </ul>
       </CmContainer>
     </div>

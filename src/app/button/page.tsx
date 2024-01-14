@@ -14,6 +14,13 @@ export function generateMetadata() {
   };
 }
 
+const COMPONENTS = [
+  {
+    href: 'https://github.com/gonta1026/cm-component-app/blob/main/src/components/ui-parts/Input/CmButton',
+    name: 'CmButton',
+  },
+] as const;
+
 export default function Button() {
   return (
     <div className={styles.button}>
@@ -33,18 +40,14 @@ export default function Button() {
                 href={'https://github.com/gonta1026/cm-component-app/tree/main/src/app/button'}
               >
                 sample page
-              </a>{' '}
-              and{' '}
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.link}
-                href={
-                  'https://github.com/gonta1026/cm-component-app/blob/main/src/components/ui-parts/Button/CmButton/index.tsx'
-                }
-              >
-                component
               </a>
+              {COMPONENTS.map((component) => (
+                <div key={component.href} className={styles.showLink}>
+                  <a target="_blank" rel="noopener noreferrer" className={styles.link} href={component.href}>
+                    - {component.name}
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
           <CmCard className={styles.card}>
