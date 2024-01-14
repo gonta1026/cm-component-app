@@ -3,9 +3,10 @@ import Link from 'next/link';
 import styles from './styles.module.scss';
 import { CmButton } from '@/components/ui-parts/Button/CmButton';
 import { COLOR } from '@/styles/const';
-import { AddIcon } from '@/components/ui-parts/Icon/AddIcon';
 import { ChevronRightIcon } from '@/components/ui-parts/Icon/ChevronRight';
 import { CmSpinner } from '@/components/ui-parts/Button/Spinner/CmSpinner';
+import { AddIcon } from '@/components/ui-parts/Icon/AddIcon';
+import { CmCard } from '@/components/ui-parts/Card/CmCard';
 
 export function generateMetadata() {
   return {
@@ -19,40 +20,47 @@ export default function Button() {
       <CmContainer>
         <h2 className={styles.title}>Button</h2>
         <div className={styles.content}>
-          <Link href={'/'}>← TopPage</Link>
-          <div>
-            Check it on{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.link}
-              href={'https://github.com/gonta1026/cm-component-app/tree/main/src/app/button'}
-            >
-              sample page
-            </a>{' '}
-            and{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.link}
-              href={
-                'https://github.com/gonta1026/cm-component-app/blob/main/src/components/ui-parts/Button/CmButton/index.tsx'
-              }
-            >
-              component
-            </a>
+          <div className={styles.topBlock}>
+            <Link href={'/'} className={styles.prevLink}>
+              ← TopPage
+            </Link>
+            <div className={styles.showLink}>
+              Check it on{' '}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+                href={'https://github.com/gonta1026/cm-component-app/tree/main/src/app/button'}
+              >
+                sample page
+              </a>{' '}
+              and{' '}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+                href={
+                  'https://github.com/gonta1026/cm-component-app/blob/main/src/components/ui-parts/Button/CmButton/index.tsx'
+                }
+              >
+                component
+              </a>
+            </div>
           </div>
-          <CmButton leftIcon={<AddIcon color={'#fff'} />}>button</CmButton>
-          <CmButton variant="solid" leftIcon={<AddIcon color={COLOR.PRIMARY} />}>
-            button
-          </CmButton>
-          <CmButton variant="solid" rightIcon={<ChevronRightIcon color={COLOR.PRIMARY} />}>
-            ボタン
-          </CmButton>
-          <CmButton variant="outline" leftIcon={<CmSpinner />}>
-            Loading...
-          </CmButton>
-          <CmButton color="red">Danger</CmButton>
+          <CmCard className={styles.card}>
+            <CmButton>Outline</CmButton>
+            <CmButton variant="solid">Solid</CmButton>
+            <CmButton variant="solid" rightIcon={<ChevronRightIcon color={COLOR.PRIMARY} />}>
+              Next
+            </CmButton>
+            <CmButton variant="solid" leftIcon={<AddIcon color={COLOR.PRIMARY} />}>
+              Add
+            </CmButton>
+            <CmButton variant="outline" leftIcon={<CmSpinner />}>
+              Loading...
+            </CmButton>
+            <CmButton color="red">Danger</CmButton>
+          </CmCard>
         </div>
         <CmSpinner />
       </CmContainer>

@@ -10,7 +10,7 @@
     "lint:fix": "next lint --fix",
     "type-check": "tsc --noEmit",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'",
-    "prepare": "husky install"
+    "lint-fix": "eslint --fix --max-warnings=0 --ext .ts,.tsx ./src && prettier --write ./src"
   },
   "dependencies": {
     "@types/node": "20.6.0",
