@@ -21,8 +21,21 @@ export default function Button() {
         <div className={styles.content}>
           <Link href={'/'}>← TopPage</Link>
           <div>
-            <Link href={'https://github.com/gonta1026/cm-component-app/tree/main/src/app/button'}>
-              Check it on Github
+            Check it on{' '}
+            <Link
+              className={styles.link}
+              href={'https://github.com/gonta1026/cm-component-app/tree/main/src/app/button'}
+            >
+              sample page
+            </Link>{' '}
+            and{' '}
+            <Link
+              className={styles.link}
+              href={
+                'https://github.com/gonta1026/cm-component-app/blob/main/src/components/ui-parts/Button/CmButton/index.tsx'
+              }
+            >
+              component
             </Link>
           </div>
           <CmButton leftIcon={<AddIcon color={'#fff'} />}>button</CmButton>
