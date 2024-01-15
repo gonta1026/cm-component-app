@@ -38,7 +38,7 @@ const COMPONENTS = [
   },
 ] as const;
 
-export default function Input() {
+export default function InputPage() {
   return (
     <div className={styles.input}>
       <CmContainer>

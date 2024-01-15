@@ -3,26 +3,25 @@ import Link from 'next/link';
 import styles from './styles.module.scss';
 import { CmSpinner } from '@/components/ui-parts/Button/Spinner/CmSpinner';
 import { CmCard } from '@/components/ui-parts/Card/CmCard';
-import { CmRadio } from '@/components/ui-parts/Radio/CmRadio';
+import { CmCheckbox } from '@/components/ui-parts/Checkbox/CmCheckbox';
+import { Metadata } from 'next';
 
-export function generateMetadata() {
-  return {
-    title: `radio | cm-component-app`,
-  };
-}
+export const metadata: Metadata = {
+  title: `radio | cm-component-app`,
+};
 
 const COMPONENTS = [
   {
-    href: 'https://github.com/gonta1026/cm-component-app/blob/main/src/components/ui-parts/Radio/CmRadio',
-    name: 'CmRadio',
+    href: 'https://github.com/gonta1026/cm-component-app/blob/main/src/components/ui-parts/Checkbox/CmCheckbox',
+    name: 'CmCheckbox',
   },
 ] as const;
 
-export default function RadioPage() {
+export default function CheckboxPage() {
   return (
-    <div className={styles.radio}>
+    <div className={styles.checkbox}>
       <CmContainer>
-        <h2 className={styles.title}>Radio</h2>
+        <h2 className={styles.title}>Checkbox</h2>
         <div className={styles.content}>
           <div className={styles.topBlock}>
             <Link href={'/'} className={styles.prevLink}>
@@ -34,7 +33,7 @@ export default function RadioPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.link}
-                href={'https://github.com/gonta1026/cm-component-app/tree/main/src/app/radio'}
+                href={'https://github.com/gonta1026/cm-component-app/tree/main/src/app/checkbox'}
               >
                 sample page
               </a>
@@ -48,13 +47,9 @@ export default function RadioPage() {
             ))}
           </div>
           <CmCard className={styles.card}>
-            <CmRadio id="radio-one">one</CmRadio>
-            <CmRadio id="radio-two" isChecked>
-              two
-            </CmRadio>
-            <CmRadio id="radio-two" isDisabled>
-              disabled
-            </CmRadio>
+            <CmCheckbox>one</CmCheckbox>
+            <CmCheckbox isChecked>two</CmCheckbox>
+            <CmCheckbox isDisabled>three</CmCheckbox>
           </CmCard>
         </div>
         <CmSpinner />

@@ -39,7 +39,7 @@ const LINKS = [
   },
 ];
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className={styles.home}>
       <CmContainer>

@@ -1,0 +1,61 @@
+@use '@/assets/styles/variables' as var;
+
+.cmCheckbox {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  .input {
+    border: 0px;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+  }
+  .checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    user-select: none;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 2px solid;
+    border-color: #e9e9e9;
+    transition-property: box-shadow;
+  }
+  &.isDisabled {
+    cursor: not-allowed;
+    .label {
+      color: rgba(36, 36, 36, 0.64);
+    }
+  }
+
+  &:focus-within {
+    .checkbox {
+      outline: solid 1px #07b53b !important;
+    }
+  }
+
+  &.isChecked {
+    .checkbox {
+      background: #07b53b;
+      border-color: #07b53b;
+      color: #fff;
+    }
+    .input {
+      display: block;
+    }
+  }
+  .label {
+    margin-left: 8px;
+    word-wrap: break-word;
+  }
+}

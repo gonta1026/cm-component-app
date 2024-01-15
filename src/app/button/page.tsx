@@ -21,7 +21,7 @@ const COMPONENTS = [
   },
 ] as const;
 
-export default function Button() {
+export default function ButtonPage() {
   return (
     <div className={styles.button}>
       <CmContainer>

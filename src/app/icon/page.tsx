@@ -9,7 +9,7 @@ export function generateMetadata() {
   };
 }
 
-export default function Icon() {
+export default function IconPage() {
   return (
     <div className={styles.icon}>
       <CmContainer>

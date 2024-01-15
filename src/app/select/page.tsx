@@ -27,7 +27,7 @@ const COMPONENTS = [
   },
 ] as const;
 
-export default function Input() {
+export default function SelectPage() {
   return (
     <div className={styles.select}>
       <CmContainer>

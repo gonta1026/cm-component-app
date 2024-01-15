@@ -25,7 +25,7 @@ const COMPONENTS = [
   },
 ] as const;
 
-export default function Textarea() {
+export default function TextareaPage() {
   return (
     <div className={styles.textarea}>
       <CmContainer>
