@@ -24,6 +24,11 @@
       gap: 8px;
       li {
         margin: 10px;
+        display: flex;
+        align-items: center;
+        .detail {
+          margin-left: 20px;
+        }
       }
     }
   }

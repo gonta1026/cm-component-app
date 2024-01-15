@@ -22,11 +22,15 @@ export default function IconPage() {
           </div>
           <ul className={styles.icons}>
             {Object.values(MATERIAL_ICON).map((icon) => (
-              <li key={icon.src}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={icon.src} alt={icon.alt} />
-                <p>{icon.src}</p>
-                <p>{icon.alt}</p>
+              <li key={icon.src} className={styles.item}>
+                <div className="image">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={icon.src} alt={icon.alt} />
+                </div>
+                <div className={styles.detail}>
+                  <p>{icon.src}</p>
+                  <p>{icon.alt}</p>
+                </div>
               </li>
             ))}
           </ul>
