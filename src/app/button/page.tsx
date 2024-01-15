@@ -52,6 +52,7 @@ export default function ButtonPage() {
           </div>
           <CmCard className={styles.card}>
             <CmButton>Outline</CmButton>
+            <CmButton isDisabled>Disabled</CmButton>
             <CmButton variant="solid">Solid</CmButton>
             <CmButton variant="solid" rightIcon={<ChevronRightIcon color={COLOR.PRIMARY} />}>
               Next

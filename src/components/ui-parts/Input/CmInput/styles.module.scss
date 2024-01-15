@@ -41,6 +41,7 @@
     }
     &:disabled {
       color: 1px solid rgba(36, 36, 36, 0.64);
+      cursor: not-allowed;
     }
     &.isError {
       border: 1px solid #b94249;
