@@ -1,0 +1,84 @@
+'use client';
+import React from 'react';
+
+console.log('FugaFugaコンポーネントを呼んでいるよ');
+
+export const FugaFuga = () => {
+  return (
+    <div>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+      <p>FugaFugaFugaFuga</p>
+    </div>
+  );
+};

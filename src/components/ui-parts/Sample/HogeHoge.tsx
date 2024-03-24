@@ -1,0 +1,84 @@
+'use client';
+import React from 'react';
+
+console.log('HogeHogeコンポーネントを呼んでいるよ');
+
+export const HogeHoge = () => {
+  return (
+    <div>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+      <p>HogeHogeHogeHoge</p>
+    </div>
+  );
+};
