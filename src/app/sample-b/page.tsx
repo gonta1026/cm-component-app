@@ -1,6 +1,5 @@
 import { HogeHoge } from '@/components/ui-parts/Sample/HogeHoge';
 import Link from 'next/link';
-
 export function generateMetadata() {
   return {
     title: `sample-b | cm-component-app`,
