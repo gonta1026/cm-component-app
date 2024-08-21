@@ -77,23 +77,17 @@ export default function InputPage() {
               </div>
               <div className='testtest3'>
                 <select>
-                  <option value=""></option>
+                  <option value="">test</option>
                 </select>
               </div>
               <div className='testtest3'>
-                <input type="radio">
-                  <option value=""></option>
-                </input>
+                <input type="radio" />
               </div>
               <div className='testtest3'>
-                <input type="checkbox">
-                  <option value=""></option>
-                </input>
+                <input type="checkbox"/>
               </div>
               <div className='testtest3'>
-                <input type="date">
-                  <option value=""></option>
-                </input>
+                <input type="date" />
               </div>
               <div className='testtest'>
                 <CmInput id="input2" />
