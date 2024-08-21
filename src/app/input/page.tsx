@@ -70,6 +70,32 @@ export default function InputPage() {
             </div>
             <CmCard className={styles.card}>
               <div className='testtest'>
+                <input type="text" />
+              </div>
+              <div className='testtest2'>
+                <textarea />
+              </div>
+              <div className='testtest3'>
+                <select>
+                  <option value=""></option>
+                </select>
+              </div>
+              <div className='testtest3'>
+                <input type="radio">
+                  <option value=""></option>
+                </input>
+              </div>
+              <div className='testtest3'>
+                <input type="checkbox">
+                  <option value=""></option>
+                </input>
+              </div>
+              <div className='testtest3'>
+                <input type="date">
+                  <option value=""></option>
+                </input>
+              </div>
+              <div className='testtest'>
                 <CmInput id="input2" />
               </div>
               <div>
