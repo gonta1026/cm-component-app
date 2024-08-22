@@ -51,7 +51,7 @@ export default function InputPage() {
               <input type="text" name="mukankei-0" />
             </div>
             <div>
-              <label htmlFor="">メール*</label>
+              <label htmlFor="">メール</label>
               <input type="text" name="email_0" />
             </div>
             <div>
