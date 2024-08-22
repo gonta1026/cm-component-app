@@ -70,7 +70,7 @@ export default function InputPage() {
             </div>
             <div>
               <label htmlFor="email-1">メール*</label>
-              <input type="text" name="email-1" />
+              <input type="text" id="email-1" name="email-1" />
             </div>
             <div>
               <label htmlFor="sei-1">姓*</label>
