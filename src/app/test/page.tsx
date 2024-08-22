@@ -47,59 +47,59 @@ export default function InputPage() {
         <div style={{ display: 'flex', flexDirection: 'row', gap: 20 }}>
           <form style={{ display: 'block' }}>
             <div>
-              <label htmlFor="">無関係0</label>
-              <input type="text" name="mukankei-0" />
+              <label htmlFor="mukankei-0">無関係0</label>
+              <input id="mukankei-0" type="text" name="mukankei-0" />
             </div>
             <div>
-              <label htmlFor="">メール</label>
-              <input type="text" name="email_0" />
+              <label htmlFor="email-0">メール</label>
+              <input type="text" id="email-0" name="email-0" />
             </div>
             <div>
-              <label htmlFor="">姓</label>
-              <input type="text" name="sei_0" />
+              <label htmlFor="sei-0">姓</label>
+              <input type="text" id="sei-0" name="sei-0" />
             </div>
             <div>
-              <label htmlFor="">名</label>
-              <input type="text" name="mei_0" />
+              <label htmlFor="mei-0">名</label>
+              <input type="text" id="mei-0" name="mei-0" />
             </div>
           </form>
           <form style={{ display: 'block' }}>
             <div>
-              <label htmlFor="">無関係1</label>
-              <input type="text" name="mukankei-1" />
+              <label htmlFor="mukankei-1">無関係1</label>
+              <input type="text" id="mukankei-1" name="mukankei-1" />
             </div>
             <div>
-              <label htmlFor="">メール*</label>
-              <input type="text" name="email" />
+              <label htmlFor="email-1">メール*</label>
+              <input type="text" name="email-1" />
             </div>
             <div>
-              <label htmlFor="">姓*</label>
-              <input type="text" name="sei" />
+              <label htmlFor="sei-1">姓*</label>
+              <input type="text" id="sei-1" name="sei-1" />
             </div>
             <div>
-              <label htmlFor="">名*</label>
-              <input type="text" name="mei" />
+              <label htmlFor="mei-1">名*</label>
+              <input type="text" id="mei-1" name="mei-1" />
             </div>
           </form>
           <form>
             <div>
-              <label htmlFor="">無関係2</label>
-              <input type="text" name="mukankei-2" />
+              <label htmlFor="mukankei-2">無関係2</label>
+              <input type="text" id="mukankei-2" name="mukankei-2" />
             </div>
             <div>
-              <label htmlFor="">セイ*</label>
-              <input type="text" name="lastname" />
+              <label htmlFor="lastname-2">セイ*</label>
+              <input type="text" id="lastname-2" name="lastname-2" />
             </div>
             <div>
-              <label htmlFor="">メイ*</label>
-              <input type="text" name="firstname" />
+              <label htmlFor="firstname">メイ*</label>
+              <input type="text" id="firstname" name="firstname" />
             </div>
           </form>
 
           <form>
             <div>
-              <label htmlFor="">名前*</label>
-              <input type="text" name="name" />
+              <label htmlFor="name-3">名前*</label>
+              <input type="text" id="name-3" name="name-3" />
             </div>
           </form>
         </div>
