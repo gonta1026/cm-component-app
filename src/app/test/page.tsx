@@ -43,6 +43,50 @@ export default function InputPage() {
     <div className={styles.input}>
       <CmContainer>
         <h2 className={styles.title}>Input</h2>
+        {/* form1 */}
+        <div style={{ display: 'flex', flexDirection: 'row', gap: 20 }}>
+          <form style={{ display: 'block' }}>
+            <div>
+              <div>
+                <label htmlFor="">無関係1</label>
+                <input type="text" />
+              </div>
+
+              <label htmlFor="">メール*</label>
+              <input type="text" name="email" />
+            </div>
+            <div>
+              <label htmlFor="">姓*</label>
+              <input type="text" name="email" />
+            </div>
+            <div>
+              <label htmlFor="">名*</label>
+              <input type="text" name="email" />
+            </div>
+          </form>
+          <form>
+            <div>
+              <label htmlFor="">無関係2</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label htmlFor="">セイ*</label>
+              <input type="text" name="lastname" />
+            </div>
+            <div>
+              <label htmlFor="">メイ*</label>
+              <input type="text" name="firstname" />
+            </div>
+          </form>
+
+          <form>
+            <div>
+              <label htmlFor="">名前*</label>
+              <input type="text" name="name" />
+            </div>
+          </form>
+        </div>
+
         <div className={styles.content}>
           <div className={styles.topBlock}>
             <Link href={'/'} className={styles.prevLink}>
@@ -108,6 +152,7 @@ export default function InputPage() {
             </div>
           </CmCard>
         </div>
+
         <CmSpinner />
       </CmContainer>
     </div>
