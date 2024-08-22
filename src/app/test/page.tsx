@@ -47,11 +47,28 @@ export default function InputPage() {
         <div style={{ display: 'flex', flexDirection: 'row', gap: 20 }}>
           <form style={{ display: 'block' }}>
             <div>
-              <div>
-                <label htmlFor="">無関係1</label>
-                <input type="text" name="mukankei-1" />
-              </div>
-
+              <label htmlFor="">無関係0</label>
+              <input type="text" name="mukankei-0" />
+            </div>
+            <div>
+              <label htmlFor="">メール*</label>
+              <input type="text" name="email_0" />
+            </div>
+            <div>
+              <label htmlFor="">姓</label>
+              <input type="text" name="sei_0" />
+            </div>
+            <div>
+              <label htmlFor="">名</label>
+              <input type="text" name="mei_0" />
+            </div>
+          </form>
+          <form style={{ display: 'block' }}>
+            <div>
+              <label htmlFor="">無関係1</label>
+              <input type="text" name="mukankei-1" />
+            </div>
+            <div>
               <label htmlFor="">メール*</label>
               <input type="text" name="email" />
             </div>
