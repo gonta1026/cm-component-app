@@ -98,8 +98,8 @@ export default function InputPage() {
 
           <form>
             <div>
-              <label htmlFor="name-3">名前*</label>
-              <input type="text" id="name-3" name="name-3" />
+              <label htmlFor="name">名前*</label>
+              <input type="text" id="name" name="name" />
             </div>
           </form>
         </div>
