@@ -49,7 +49,7 @@ export default function InputPage() {
             <div>
               <div>
                 <label htmlFor="">無関係1</label>
-                <input type="text" />
+                <input type="text" name="mukankei-1" />
               </div>
 
               <label htmlFor="">メール*</label>
@@ -57,17 +57,17 @@ export default function InputPage() {
             </div>
             <div>
               <label htmlFor="">姓*</label>
-              <input type="text" />
+              <input type="text" name="sei" />
             </div>
             <div>
               <label htmlFor="">名*</label>
-              <input type="text" />
+              <input type="text" name="mei" />
             </div>
           </form>
           <form>
             <div>
               <label htmlFor="">無関係2</label>
-              <input type="text" />
+              <input type="text" name="mukankei-2" />
             </div>
             <div>
               <label htmlFor="">セイ*</label>
