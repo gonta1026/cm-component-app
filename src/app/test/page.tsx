@@ -57,11 +57,11 @@ export default function InputPage() {
             </div>
             <div>
               <label htmlFor="">姓*</label>
-              <input type="text" name="email" />
+              <input type="text" />
             </div>
             <div>
               <label htmlFor="">名*</label>
-              <input type="text" name="email" />
+              <input type="text" />
             </div>
           </form>
           <form>
