@@ -87,8 +87,8 @@ export default function InputPage() {
               <input type="text" id="mukankei-2" name="mukankei-2" />
             </div>
             <div>
-              <label htmlFor="lastname-2">セイ*</label>
-              <input type="text" id="lastname-2" name="lastname-2" />
+              <label htmlFor="lastname">セイ*</label>
+              <input type="text" id="lastname" name="lastname" />
             </div>
             <div>
               <label htmlFor="firstname">メイ*</label>
