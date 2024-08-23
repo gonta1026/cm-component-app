@@ -102,6 +102,19 @@ export default function InputPage() {
               <input type="text" id="name" name="name" />
             </div>
           </form>
+
+          <form>
+            <div>
+              <label htmlFor="email">めーる</label>
+              <input type="text" id="email" name="email" />
+            </div>
+          </form>
+          <form>
+            <div>
+              <label htmlFor="email-2">メールアドレス</label>
+              <input type="text" id="email-2" name="email-2" />
+            </div>
+          </form>
         </div>
 
         <div className={styles.content}>
