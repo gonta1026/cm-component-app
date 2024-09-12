@@ -53,6 +53,7 @@ export default function InputPage() {
               </label>
             </div>
             <div>
+              {/*  */}
               <label>
                 ラジオ２
                 <input type="radio" name="hogehoge" />
