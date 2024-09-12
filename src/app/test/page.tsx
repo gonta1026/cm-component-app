@@ -47,6 +47,22 @@ export default function InputPage() {
         <div style={{ display: 'flex', flexDirection: 'row', gap: 20 }}>
           <form style={{ display: 'block' }}>
             <div>
+              <label>
+                ラジオ１
+                <input type="radio" />
+              </label>
+            </div>
+            <div>
+              <label>
+                ラジオ２
+                <input type="radio" name="hogehoge" />
+              </label>
+              <label>
+                ラジオ３
+                <input type="radio" name="hogehoge" />
+              </label>
+            </div>
+            <div>
               <label htmlFor="mukankei-0">無関係0</label>
               <input id="mukankei-0" type="text" name="mukankei-0" />
             </div>
