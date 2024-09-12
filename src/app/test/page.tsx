@@ -46,9 +46,25 @@ export default function InputPage() {
         {/* form1 */}
         <div style={{ display: 'flex', flexDirection: 'row', gap: 20 }}>
           <form style={{ display: 'block' }}>
+            <label>
+              checkbox1
+              <input type="checkbox" name="Purpose" value="1" />
+            </label>
+            <label>
+              checkbox2
+              <input type="checkbox" name="Purpose" value="2" />
+            </label>
+            <label>
+              checkbox3
+              <input type="checkbox" name="Purpose" value="3" />
+            </label>
+            <label>
+              checkbox4（name属性無）
+              <input type="checkbox" value="4" />
+            </label>
             <div>
               <label>
-                ラジオ１
+                ラジオ１（name属性無）
                 <input type="radio" />
               </label>
             </div>
