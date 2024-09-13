@@ -62,6 +62,10 @@ export default function InputPage() {
               checkbox4（name属性無）
               <input type="checkbox" value="4" />
             </label>
+            <label>
+              checkbox4（name属性あり）
+              <input type="checkbox" name="only" value="1" />
+            </label>
             <div>
               <label>
                 ラジオ１（name属性無）
